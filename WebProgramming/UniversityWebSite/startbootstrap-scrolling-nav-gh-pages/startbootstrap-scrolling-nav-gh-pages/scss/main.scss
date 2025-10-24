@@ -1,0 +1,59 @@
+// Import variables
+@import 'variables';
+
+// Import Bootstrap (optional if you want to override variables before import)
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+.bg-cover {
+  background: url('../assets/grace-college.jpg') center/cover no-repeat fixed;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+}
+// General styles
+body {
+  font-family: $body-font;
+  color: #222;
+  background-color: $secondary-color;
+  line-height: 1.6;
+}
+
+// Navbar customization
+.navbar-brand {
+  font-weight: 700;
+  color: $primary-color !important;
+
+  &:hover {
+    color: darken($primary-color, 10%) !important;
+  }
+}
+
+// Hero section
+.hero {
+  min-height: 40vh;
+  background: $hero-gradient, url('../images/university-campus.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+}
+
+// Footer styles
+footer {
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,47 @@
+.bg-cover {
+  background: url("../assets/grace-college.jpg") center/cover no-repeat fixed;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #004080 !important;
+}
+.navbar-brand:hover {
+  color: rgb(0, 38.5, 77) !important;
+}
+
+.hero {
+  min-height: 40vh;
+  background: linear-gradient(135deg, rgba(0, 64, 128, 0.85), rgba(0, 0, 0, 0.65)), url("../images/university-campus.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #004080;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=main.css.map */
