@@ -1,70 +1,334 @@
 <!doctype html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Departments - Grace University</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore academic departments at Grace University">
+    <meta name="author" content="Grace University">
+    <title>Departments - Grace University</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="scss/main.css" rel="stylesheet">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-<div class="container">
-<a class="navbar-brand" href="index.html">Grace University</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navMenu">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link active" href="departments.html">Departments</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-</div>
-</div>
-</nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Grace University</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button id="themeToggle" class="btn btn-sm btn-outline-light me-2" aria-label="Toggle dark mode"
+                            style="margin-top: 0.25rem;">
+                            <span class="d-none d-lg-inline me-1">Theme</span>
+                            <span id="themeIcon">🌙</span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="departments.html">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Our Faculties & Departments</h1>
+            <p class="lead">Discover world-class programs designed to shape your future 🏛️</p>
+        </div>
+    </header>
 
-<section class="py-5">
-<div class="container">
-<h2 class="mb-4">Our Faculties & Departments</h2>
-<div class="row gy-4">
-<div class="col-md-4">
-<div class="card h-100">
-<img src="https://picsum.photos/600/300?random=2" class="card-img-top" alt="Engineering">
-<div class="card-body">
-<h5 class="card-title">Faculty of Engineering</h5>
-<p class="card-text">Programs: Aerospace Engineering, Computer Engineering, Electrical Engineering.</p>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card h-100">
-<img src="https://picsum.photos/600/300?random=3" class="card-img-top" alt="Humanities">
-<div class="card-body">
-<h5 class="card-title">Faculty of Humanities</h5>
-<p class="card-text">Programs: History, Philosophy, Languages.</p>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card h-100">
-<img src="https://picsum.photos/600/300?random=4" class="card-img-top" alt="Business">
-<div class="card-body">
-<h5 class="card-title">Faculty of Business</h5>
-<p class="card-text">Programs: Management, Economics, Entrepreneurship.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+    <!-- Departments Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Engineering Faculty -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="department-card card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Faculty of Engineering" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h4">Faculty of Engineering ⚙️</h3>
+                            <p class="card-text">Leading innovation in technology and engineering sciences.</p>
+                            <h5 class="h6 mt-3 mb-2">Programs:</h5>
+                            <ul class="mb-3">
+                                <li>Aerospace Engineering</li>
+                                <li>Computer Engineering</li>
+                                <li>Electrical Engineering</li>
+                            </ul>
+                            <div class="mt-auto">
+                                <button class="btn btn-outline-primary w-100"
+                                    onclick="showDepartmentDetail('engineering')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
 
+                <!-- Humanities Faculty -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="department-card card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Faculty of Humanities" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h4">Faculty of Humanities 📚</h3>
+                            <p class="card-text">Exploring human culture, thought, and expression.</p>
+                            <h5 class="h6 mt-3 mb-2">Programs:</h5>
+                            <ul class="mb-3">
+                                <li>History</li>
+                                <li>Philosophy</li>
+                                <li>Languages</li>
+                            </ul>
+                            <div class="mt-auto">
+                                <button class="btn btn-outline-primary w-100"
+                                    onclick="showDepartmentDetail('humanities')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
 
-<footer class="py-4 bg-light">
-<div class="container text-center">
-<small>&copy; Grace University • 2025</small>
-</div>
-</footer>
+                <!-- Business Faculty -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="department-card card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Faculty of Business" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h4">Faculty of Business 💼</h3>
+                            <p class="card-text">Preparing future leaders in the global business environment.</p>
+                            <h5 class="h6 mt-3 mb-2">Programs:</h5>
+                            <ul class="mb-3">
+                                <li>Management</li>
+                                <li>Economics</li>
+                                <li>Entrepreneurship</li>
+                            </ul>
+                            <div class="mt-auto">
+                                <button class="btn btn-outline-primary w-100"
+                                    onclick="showDepartmentDetail('business')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Department Detail Modal -->
+    <div class="modal fade" id="departmentModal" tabindex="-1" aria-labelledby="departmentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="departmentModalLabel">Department Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalContent">
+                    <!-- Content will be inserted dynamically -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Contact Admissions</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Why Study Here Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Study at Grace?</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="text-center">
+                        <div class="feature-number mb-3">01</div>
+                        <h5>Expert Faculty</h5>
+                        <p class="text-muted">Learn from industry leaders and renowned academics.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="text-center">
+                        <div class="feature-number mb-3">02</div>
+                        <h5>Modern Facilities</h5>
+                        <p class="text-muted">State-of-the-art labs, libraries, and research centers.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="text-center">
+                        <div class="feature-number mb-3">03</div>
+                        <h5>Career Support</h5>
+                        <p class="text-muted">Dedicated career services and industry connections.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="text-center">
+                        <div class="feature-number mb-3">04</div>
+                        <h5>Global Network</h5>
+                        <p class="text-muted">Join 25,000+ alumni worldwide in leading positions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Apply?</h2>
+            <p class="lead mb-4">Take the first step towards your future at Grace University.</p>
+            <a href="contact.html" class="btn btn-warning btn-lg">Contact Admissions</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5>Grace University</h5>
+                    <p class="text-muted">Empowering minds, shaping futures since 1985.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted">Home</a></li>
+                        <li><a href="departments.html" class="text-muted">Departments</a></li>
+                        <li><a href="contact.html" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Contact</h5>
+                    <p class="text-muted mb-1">123 Grace St., Dream City</p>
+                    <p class="text-muted mb-1">Phone: +90 312 000 0000</p>
+                    <p class="text-muted">Email: info@grace.edu</p>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="text-center">
+                <small class="text-muted">&copy; 2025 Grace University. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/theme-toggle.js"></script>
+
+    <!-- Department Details Script -->
+    <script>
+        const departmentData = {
+            engineering: {
+                title: 'Faculty of Engineering ⚙️',
+                description: 'Our Faculty of Engineering is at the forefront of technological innovation and research.',
+                programs: [
+                    { name: 'Aerospace Engineering', duration: '4 years', credits: '240 ECTS' },
+                    { name: 'Computer Engineering', duration: '4 years', credits: '240 ECTS' },
+                    { name: 'Electrical Engineering', duration: '4 years', credits: '240 ECTS' }
+                ],
+                facilities: ['Modern laboratories', 'Research centers', 'Industry partnerships'],
+                contact: 'engineering@grace.edu'
+            },
+            humanities: {
+                title: 'Faculty of Humanities 📚',
+                description: 'Explore human culture, thought, and expression through our comprehensive programs.',
+                programs: [
+                    { name: 'History', duration: '4 years', credits: '240 ECTS' },
+                    { name: 'Philosophy', duration: '4 years', credits: '240 ECTS' },
+                    { name: 'Languages', duration: '4 years', credits: '240 ECTS' }
+                ],
+                facilities: ['Extensive library', 'Language labs', 'Study abroad programs'],
+                contact: 'humanities@grace.edu'
+            },
+            business: {
+                title: 'Faculty of Business 💼',
+                description: 'Prepare for leadership roles in the global business environment.',
+                programs: [
+                    { name: 'Management', duration: '4 years', credits: '240 ECTS' },
+                    { name: 'Economics', duration: '4 years', credits: '240 ECTS' },
+                    { name: 'Entrepreneurship', duration: '4 years', credits: '240 ECTS' }
+                ],
+                facilities: ['Business incubator', 'Trading room', 'Corporate partnerships'],
+                contact: 'business@grace.edu'
+            }
+        };
+
+        function showDepartmentDetail(deptId) {
+            const dept = departmentData[deptId];
+            const modalContent = document.getElementById('modalContent');
+
+            let html = `
+                <h3>${dept.title}</h3>
+                <p class="lead">${dept.description}</p>
+                
+                <h4 class="mt-4 mb-3">Academic Programs</h4>
+                <div class="row g-3">
+            `;
+
+            dept.programs.forEach(program => {
+                html += `
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">${program.name}</h5>
+                                <p class="mb-1"><strong>Duration:</strong> ${program.duration}</p>
+                                <p class="mb-0"><strong>Credits:</strong> ${program.credits}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += `
+                </div>
+                
+                <h4 class="mt-4 mb-3">Facilities & Resources</h4>
+                <ul class="list-group list-group-flush">
+            `;
+
+            dept.facilities.forEach(facility => {
+                html += `<li class="list-group-item">✓ ${facility}</li>`;
+            });
+
+            html += `
+                </ul>
+                
+                <div class="alert alert-info mt-4">
+                    <strong>Contact:</strong> ${dept.contact}
+                </div>
+            `;
+
+            modalContent.innerHTML = html;
+
+            const modal = new bootstrap.Modal(document.getElementById('departmentModal'));
+            modal.show();
+        }
+    </script>
 </body>
+
 </html>
