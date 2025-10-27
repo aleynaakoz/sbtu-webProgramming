@@ -127,7 +127,7 @@ The live version of the website is hosted on GitHub Pages.
 | Resource        | Link                        |
 | --------------- | --------------------------- |
 | 🧩 Repository   | [(https://github.com/aleynaakoz/sbtu-webProgramming.git)](#)  |
-| 🌍 Live Website | [GitHub Pages Link Here](#) |
+| 🌍 Live Website | [(https://github.com/aleynaakoz/sbtu-webProgramming)](#) |
 
 **Deployment Steps**
 
