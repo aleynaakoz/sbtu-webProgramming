@@ -144,16 +144,17 @@ The live version of the website is hosted on GitHub Pages.
 project/
 │
 ├── assets/              # Images & media
-    └── favicon.ico
-    └── grace-college.jpg
+|   └── favicon.ico
+|    └── grace-college.jpg
 ├── css/
 │   └── styles.css
 ├── scss/
-│   ├── _variables.scss
-│   └── main.scss
+│   ├── main.css
+│   ├── main.scss
+|   └── main.css.map
 ├── js/
 │   └── counter-animation.js
-    └── theme-toggle.js
+|    └── theme-toggle.js
 │
 ├── index.html
 ├── departments.html
@@ -189,7 +190,7 @@ project/
 | Name             | Student ID     |
 | ------------     | -------------- |
 | Aleyna Aköz      | 220201002      |     
-| Cansu Öznur Avcı | 230201170      |                |
+| Cansu Öznur Avcı | 230201170      |                
 
 
 ---
