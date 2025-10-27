@@ -47,11 +47,12 @@ All styles are customized using **SASS variables**, ensuring a **consistent colo
 ```
 scss/
 │
-├── _variables.scss   # Color palette, typography, spacing
-└── main.scss         # Imports + global styles
+├── main.css   
+└── main.scss        # Imports + global styles
+└── main.css.map
 
 css/
-└── main.css          # Compiled output
+└── styles.css         
 ```
 
 ### Example Variables
@@ -143,13 +144,16 @@ The live version of the website is hosted on GitHub Pages.
 project/
 │
 ├── assets/              # Images & media
+    └── favicon.ico
+    └── grace-college.jpg
 ├── css/
-│   └── main.css
+│   └── styles.css
 ├── scss/
 │   ├── _variables.scss
 │   └── main.scss
 ├── js/
-│   └── script.js
+│   └── counter-animation.js
+    └── theme-toggle.js
 │
 ├── index.html
 ├── departments.html
