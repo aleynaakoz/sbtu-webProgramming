@@ -185,7 +185,7 @@ project/
 | Name             | Student ID     |
 | ------------     | -------------- |
 | Aleyna Aköz      | 220201002      |     
-| Cansu Öznur Avcı |                |
+| Cansu Öznur Avcı | 230201170      |                |
 
 
 ---
