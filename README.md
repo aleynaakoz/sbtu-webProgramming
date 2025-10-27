@@ -1,154 +1,201 @@
-Grace University — Responsive University Introduction Website
+# 🎓 **Grace University — Responsive University Introduction Website**
 
-A modern, elegant, and fully responsive university introduction website designed and developed using Bootstrap 5 and SASS (SCSS).
-This project showcases the fictional Grace University, highlighting its departments, academic offerings, and contact information through a clean, accessible, and professional interface.
+A modern, elegant, and fully responsive university introduction website designed and developed using **Bootstrap 5** and **SASS (SCSS)**.
+This project showcases the fictional **Grace University**, highlighting its departments, academic offerings, and contact information through a clean, accessible, and professional interface.
 
-Project Overview
+---
 
-This project was developed as part of the University Introduction Website assignment.
-The goal was to design a responsive, maintainable, and aesthetically appealing website that effectively introduces a university’s brand and structure.
+## 🧭 **Project Overview**
 
-The website consists of three main pages, each designed for clarity, usability, and consistent visual identity:
-Home (index.html) – Overview of Grace University, mission, and hero banner.
-Departments (departments.html) – Faculties and academic programs represented using Bootstrap cards and badges.
-Contact (contact.html) –Contact form that uses a mailto-based submission method, allowing users to send messages directly via their default email client. 
-All styles are customized using SASS variables for easy theming, ensuring a consistent color palette and typography across all pages.
+This project was developed as part of the **University Introduction Website Assignment**.
+The goal was to design a **responsive**, **maintainable**, and **aesthetically appealing** website that effectively introduces a university’s brand and structure.
 
-Objectives
+### 🗂️ Pages
 
-Develop a responsive website layout using Bootstrap Grid System.
-Create modular, reusable styles using SASS partials and variables.
-Ensure cross-device compatibility (desktop, tablet, and mobile).
-Utilize Git & GitHub for version control and collaboration.
-Deploy the project publicly using GitHub Pages.
+* **Home (index.html)** – Overview of Grace University, mission, and hero banner.
+* **Departments (departments.html)** – Faculties and programs shown via Bootstrap cards & badges.
+* **Contact (contact.html)** – Contact form with mailto-based submission (default email client trigger).
 
-Technologies & Tools Used
+All styles are customized using **SASS variables**, ensuring a **consistent color palette** and **typography** across all pages.
 
-Category                                                    Technologies / Tools
-Frontend Development                                        HTML5, CSS3, Bootstrap 5.3, JavaScript (Vanilla)
-Styling Framework                                           SASS (SCSS)
-Version Control                                             Git & GitHub
-Deployment                                                  GitHub Pages
-IDE / Editor                                                Visual Studio Code
-Extensions                                                  Live Sass Compiler
+---
 
-SASS Structure & Theming
+## 🎯 **Objectives**
 
-The SASS (SCSS) structure ensures modularity and reusability of design components.
+✅ Develop a responsive layout using **Bootstrap Grid System**
+✅ Create modular styles using **SASS partials and variables**
+✅ Ensure full **cross-device compatibility**
+✅ Utilize **Git & GitHub** for version control
+✅ **Deploy** the website publicly using **GitHub Pages**
+
+---
+
+## 🛠️ **Technologies & Tools**
+
+| Category                 | Tools / Technologies                             |
+| ------------------------ | ------------------------------------------------ |
+| **Frontend Development** | HTML5, CSS3, Bootstrap 5.3 |
+| **Styling Framework**    | SASS (SCSS)                                      |
+| **Version Control**      | Git & GitHub                                     |
+| **Deployment**           | GitHub Pages                                     |
+| **Editor**               | Visual Studio Code + Live Sass Compiler          |
+
+---
+
+## 🎨 **SASS Structure & Theming**
+
+```
 scss/
 │
-├── _variables.scss     # Color palette, typography, spacing variables
-└── main.scss           # Imports variables and defines global + component styles
-The compiled CSS is automatically generated under /css/main.css:
+├── _variables.scss   # Color palette, typography, spacing
+└── main.scss         # Imports + global styles
+
 css/
-└── main.css
+└── main.css          # Compiled output
+```
 
-Example SASS Variables
+### Example Variables
 
+```scss
 $primary-color: #4b0082;
 $secondary-color: #f8f9fa;
 $hero-gradient: linear-gradient(to right, rgba(75, 0, 130, 0.8), rgba(123, 45, 191, 0.8));
 $body-font: 'Poppins', sans-serif;
+```
 
-This approach makes it easy to modify the entire site’s color scheme or typography by changing just a few variable values.
+🎨 *Change one variable — refresh the whole theme!*
 
-Page Details
+---
 
-Home (index.html):
+## 🧩 **Page Details**
 
-Hero section featuring a university banner and welcoming slogan.
-Short introduction about Grace University’s history and values.
-Responsive layout designed using Bootstrap containers and flex utilities.
+### 🏠 Home (`index.html`)
 
-Departments (departments.html):
+* Hero section with a welcoming slogan
+* University history and values
+* Responsive Bootstrap layout
 
-Displays key faculties: Engineering, Humanities, and Business.
-Academic programs are shown using Bootstrap badges for quick readability.
-Layout adjusts seamlessly across devices.
+### 🏛️ Departments (`departments.html`)
 
-Contact (contact.html):
+* Key faculties: Engineering, Humanities, Business
+* Academic programs via badges
+* Adaptive grid system
 
-Contact form with input validation (name, email, message).
-A JavaScript handler triggers the user’s mail client with pre-filled data.
-Optional setup for real submissions via Formspree.io or backend integration.
+### 📞 Contact (`contact.html`)
 
-Responsive Design Highlights
+* Form fields: Name, Email, Message
+* JavaScript mailto handler (auto opens mail client)
+* Optional Formspree or backend integration
 
-Bootstrap 5 grid system for fluid responsiveness.
-Media queries in SASS for additional fine-tuning.
-Optimized spacing, padding, and image scaling across all screen sizes.
-Tested on Chrome, Edge, and Safari browsers.
+---
 
-Git & Version Control
+## 📱 **Responsive Design Highlights**
 
-Each team member was responsible for maintaining version history using Git commands.
+* Bootstrap 5 grid system for fluid responsiveness
+* Custom media queries for extra control
+* Optimized images and spacing
+* Tested on Chrome, Edge, and Safari
 
-Required Workflow:
-git clone <repository-url>
+---
+
+## 💾 **Git & Version Control**
+
+Git workflow followed during development:
+
+```bash
+git clone
 git add .
 git commit -m "Add homepage layout and SASS styling"
 git push
 git pull
+```
 
-After development, a commit history log was generated:
+After development:
 
+```bash
 git log > project_log.txt
-The project_log.txt file is included in the submission folder.
+```
 
-Deployment (GitHub Pages)
+📄 The `project_log.txt` file is included in the project folder for verification.
 
-The live version of the website is hosted using GitHub Pages.
-Resource                                                        Link
-Repository                                                      [Your GitHub Repo Link Here]
-Live Website                                                    [Your GitHub Pages Link Here]
+---
 
-To deploy:
-1.Push all project files to GitHub.
-2.Go to Settings → Pages → Branch: main → /root.
-3.Wait for a few minutes and your site will be live.
+## 🌐 **Deployment (GitHub Pages)**
 
-Folder Structure
+The live version of the website is hosted on GitHub Pages.
 
+| Resource        | Link                        |
+| --------------- | --------------------------- |
+| 🧩 Repository   | [(https://github.com/aleynaakoz/sbtu-webProgramming.git)](#)  |
+| 🌍 Live Website | [GitHub Pages Link Here](#) |
+
+**Deployment Steps**
+
+1. Push all files to GitHub
+2. Go to **Settings → Pages → Branch: main → /root**
+3. Wait a few minutes for activation ✨
+
+---
+
+## 📁 **Folder Structure**
+
+```
 project/
 │
-├── assets/               # Images and media files
+├── assets/              # Images & media
 ├── css/
 │   └── main.css
 ├── scss/
 │   ├── _variables.scss
 │   └── main.scss
 ├── js/
-│   └── script.js         
+│   └── script.js
+│
 ├── index.html
 ├── departments.html
 ├── contact.html
 ├── project_log.txt
 └── README.md
+```
 
-Accessibility & Best Practices
+---
 
-Semantic HTML5 elements used for better SEO and accessibility.
-Descriptive alt attributes for images.
-Color contrast meets WCAG accessibility guidelines.
-Form fields include labels for screen reader compatibility.
-Code formatted and validated using W3C Validator.
+## ♿ **Accessibility & Best Practices**
 
-Key Learnings & Outcomes
+* ✅ Semantic HTML5 for SEO & screen readers
+* ✅ WCAG-compliant color contrast
+* ✅ Descriptive alt text for all images
+* ✅ Labelled form inputs
+* ✅ Code validated with **W3C Validator**
 
-Building responsive layouts with Bootstrap grid.
-Implementing consistent theming using SASS variables.
-Managing source code using Git & GitHub.
-Deploying static websites via GitHub Pages.
-Understanding teamwork and version control best practices.
+---
 
-License
+## 📚 **Key Learnings & Outcomes**
 
-This project is for educational purposes only and does not represent a real university.
-All images and resources used are either royalty-free or used for demonstration.
+* Responsive layouts with **Bootstrap Grid**
+* Consistent theming using **SASS Variables**
+* Version control with **Git & GitHub**
+* Website deployment using **GitHub Pages**
+* Collaborative workflow and commit tracking
+
+---
+
+## 👩‍💻 **Team Members**
+
+| Name             | Student ID     |
+| ------------     | -------------- |
+| Aleyna Aköz      | 220201002      |     
+| Cansu Öznur Avcı |                |
 
 
+---
 
+## ⚖️ **License**
 
+This project is for **educational purposes only** and does not represent a real university.
+All images and resources are royalty-free or used for demonstration.
 
+---
 
-
+⭐ *Developed with dedication and creativity — Grace University, 2025.*
+💜 *“Knowledge. Growth. Excellence.”*
